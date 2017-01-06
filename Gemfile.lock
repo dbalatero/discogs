@@ -1,11 +1,32 @@
+GIT
+  remote: git@github.com:buntine/discogs.git
+  revision: 505fb7ad847d3132a3fdefd236d3f90331fb36cb
+  specs:
+    discogs-wrapper (2.1.4)
+      hashie (~> 3.0)
+      oauth (~> 0.4.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.1)
+    hashie (3.4.6)
+    hpricot (0.8.6)
+    method_source (0.8.2)
+    oauth (0.4.7)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    slop (3.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  discogs-wrapper!
+  hpricot
+  pry
 
 BUNDLED WITH
-   1.10.6
+   1.13.7
