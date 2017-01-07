@@ -4,7 +4,12 @@ echo "Downloading..."
 ./download.rb
 
 echo "Creating..."
-./create.rb | ./stitch.rb > docs/index.html
+./create.rb > output.html
+
+echo "Stitching..."
+cat output.html | ./stitch.rb > docs/index.html
+
+rm output.html
 
 echo "Updating..."
 
