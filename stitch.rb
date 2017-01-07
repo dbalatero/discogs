@@ -70,6 +70,6 @@ footer = <<-EOF
 </html>
 EOF
 
-releases = STDIN.gets
+releases = ARGF.read
 
 puts "#{header}\n#{releases}\n#{footer}"
